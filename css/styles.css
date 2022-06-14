@@ -336,6 +336,16 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
     flex-wrap: wrap;
 }
 
+.mainProductos h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Clicker Script', cursive;
+    text-decoration: underline 0.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+}
+
 .mainProductos section {
     margin-bottom: 2rem;
     width: 80%;
