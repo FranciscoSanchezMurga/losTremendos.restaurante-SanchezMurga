@@ -40,7 +40,8 @@ CLASES PARA LA PÁGINA "index"
     /* Centro horizontalmente el nav y h1  */
     align-items: center;
     /* Genero el espacio vertical entre h1, nav y los bordes de su padre header*/
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin-top: 1rem;
 }
 
 .headerIndex ul {
@@ -246,7 +247,8 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin-top: 1rem;
 }
 
 .header nav {
