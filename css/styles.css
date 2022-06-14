@@ -271,7 +271,12 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
     height: 1.8rem;
 }
 
-.header h1 {
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1 {
     color: white;
     font-size: 3rem;
     font-family: 'Clicker Script', cursive;
@@ -279,7 +284,7 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
     text-align: center;
 }
 
-.main {
+.contenidoMain {
     color: white;
     display: flex;
     flex-direction: row;
@@ -378,8 +383,6 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
 .mainProductos p {
     font-size: 1rem;
 }
-
-
 
 /* DISEÑO "RESPONSIVE" (mobile last)*/
 
