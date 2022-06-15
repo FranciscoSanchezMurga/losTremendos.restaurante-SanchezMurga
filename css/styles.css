@@ -285,6 +285,7 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
     text-decoration: underline 0.1rem;
     text-align: center;
     margin-bottom: 2rem;
+    transition: all 3s;
 }
 
 .contenidoMain {
@@ -306,6 +307,7 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
     background: rgb(255,251,0);
     background: linear-gradient(0deg, rgba(255, 251, 0, 0.096) 40%, rgba(0, 0, 0, 0.183) 100%);
     align-items: center;
+    transition: all 4s;
 }
 
 .main ul,p {
@@ -343,7 +345,6 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
     text-decoration: underline 0.1rem;
     text-align: center;
     margin-bottom: 2rem;
-}
 }
 
 .mainProductos section {
@@ -490,6 +491,5 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
         width: 90%;
         align-items: center;
     }
-
 
 }
