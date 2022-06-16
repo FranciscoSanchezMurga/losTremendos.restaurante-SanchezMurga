@@ -34,10 +34,6 @@ CLASES PARA LA PÁGINA "index"
 
 .headerIndex {
     grid-area: headerIndex;
-    display: flex;
-    /* Flex para poder alinear a mi gusto h1 y nav */
-    flex-direction: column;
-    /* Centro horizontalmente el nav y h1  */
     align-items: center;
     /* Genero el espacio vertical entre h1, nav y los bordes de su padre header*/
     justify-content: flex-start;
