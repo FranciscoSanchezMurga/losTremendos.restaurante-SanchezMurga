@@ -37,7 +37,14 @@ CLASES PARA LA PÁGINA "index"
     align-items: center;
     /* Genero el espacio vertical entre h1, nav y los bordes de su padre header*/
     justify-content: flex-start;
-    margin-top: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important; ;
+
+}
+
+.headerIndex nav{
+    background-color: #fff67d;
+    height: auto;
+
 }
 
 .headerIndex ul {
