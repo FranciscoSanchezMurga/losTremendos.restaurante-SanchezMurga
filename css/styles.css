@@ -202,11 +202,7 @@ a:visited {
 
 /* DEFINO LO QUE ESTÁ DENTRO DE LA ETIQUETA "logoIndex" */
 
-.logoIndex {
-    grid-area: logoIndex;
-}
-
-.logoIndex img {
+.logoIndex{
     /* Método para centrar la imagen en su contenedor */
     position: relative;
     left: 50%;
@@ -225,7 +221,7 @@ CLASES PARA EL RESTO DE LAS PÁGINAS
 
 */
 
-.container {
+.containerX {
     /* Defino la estructura grid que tendrán las páginas.  */
     display: grid; 
     grid-auto-columns: 1fr; 
