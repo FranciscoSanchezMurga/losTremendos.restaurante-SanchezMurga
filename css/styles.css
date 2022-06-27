@@ -62,7 +62,7 @@
     border: solid #1D3468 0.1rem;
     background-color: #ffef12;
     border-radius: 5%;
-    margin: auto;
+    /* margin: auto; */
     opacity: 100%;
     transition: all 0.5s;
 }
@@ -216,6 +216,10 @@ a:visited {
 
     .main h1 {
         font-size: 4rem;
+    }
+
+    .itemDelNavNoSeleccionado:hover{
+        margin:auto;
     }
 
     .contenedorDentroDeMain{
