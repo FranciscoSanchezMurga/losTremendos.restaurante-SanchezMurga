@@ -1,0 +1,73 @@
+.fondoOtrasPaginas {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9509803921568627) 17%, rgb(14, 30, 61) 60%, rgba(29, 52, 104, 0.5) 80%, rgba(100, 0, 0, 0.7));
+    background-color: $rojoBase;
+}
+
+.header{
+    .nav{
+        img{
+            width:10vw;
+            height:auto;
+        }
+    }
+}
+
+.contenedorDentroDeMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin: 1rem;
+        background-color: $fondoSection;
+        border-radius: 2%;
+
+        &:hover {
+            transform: scale(1.2);
+            transition: all 1s;
+            filter: saturate(1000%);
+        }
+
+        h2 {
+            font-family: $letraCarta;
+            text-decoration: underline 0.1rem;
+            font-size: 2.5rem;
+            text-align: center;
+            color: $amarillo;
+            margin: 1rem 1rem 0rem 1rem;
+        }
+
+        ul{
+            font-size: 1.3rem;
+            text-align: justify;
+            margin: 1rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+            text-align: justify;
+            margin: 1rem;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contenedorDentroDeMain {
+        flex-direction: column;
+        align-items: center;
+    
+        section {
+            width: 90vw;
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+    
+        }
+    }
+}

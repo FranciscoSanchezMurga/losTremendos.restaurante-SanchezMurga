@@ -1,0 +1,78 @@
+.fondoIndex {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9509803921568627) 17%, rgb(14, 30, 61) 60%, rgba(29, 52, 104, 0.5) 80%, rgba(100, 0, 0, 0.7));
+    background-color: $rojoBase;
+}
+
+.asideLogoAside {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    aside {
+        width: 20vw;
+        font-size: 1rem;
+        text-align: center;
+        font-family: $letraCarta;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            span{
+                font-family: letraMolde;
+                animation-name: colorLetras;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-delay: 2s;
+            }
+        }
+    }
+
+    section {
+         width: 60vw;
+         .logoIndex {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 100%;
+            height: auto;
+         }
+    }
+}
+
+@keyframes colorLetras {
+
+    0% {
+        color: white ;
+    }
+    50% {
+        color:#fff67d;
+        font-size: 1.2rem;
+    }
+    100% {
+        color: white;
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width: 768px){
+    .asideLogoAside {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        aside {
+                width: 100vw;
+                align-items: center;
+            }
+    
+        section {
+            .logoIndex {
+                width: 100vw;
+            }
+        }
+    }
+}
+
+

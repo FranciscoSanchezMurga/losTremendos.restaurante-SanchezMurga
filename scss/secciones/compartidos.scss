@@ -1,0 +1,107 @@
+.contenedor {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 3.2fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+    font-family: $letraMolde;
+}
+
+
+.header {
+    grid-area: header;
+
+    .nav {
+        background-color: $amarillo;
+        opacity: 50%;
+
+        .botonNav {
+            background-color: $gris;
+        }
+
+        div {
+
+            ul {
+                .itemDelNavNoSeleccionado {
+                    &:hover {
+                        padding: 0rem 0.3rem;
+                        transform: scale(1.3);
+                        transition: .5s;
+                        border: solid #1D3468 0.1rem;
+                        background-color: #ffef12;
+                        border-radius: 5%;
+                        opacity: 100%;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1D3468;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+
+    h1 {
+        font-family: $letraCarta;
+        font-size: 3rem;
+    }
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        color: $amarillo;
+        margin: 1rem;
+        transform: scale(2);
+
+        &:hover {
+            color: $amarilloFuerte;
+            transform: scale(3);
+            transition: .3s;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        .nav {
+            div {
+                ul {
+                    .itemDelNavNoSeleccionado {
+                        &:hover {
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        h1 {
+            font-size: 4rem;    
+        }
+    }
+}
