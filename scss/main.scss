@@ -3,8 +3,10 @@
     margin: 0;
 }
 
-@import './variables/letras.scss';
-@import './variables/colores.scss';
+@import './variables/letras';
+@import './variables/colores';
+@import './variables/extend';
+@import './variables/mixins';
 @import './secciones/index';
 @import './secciones/noIndex';
 @import './secciones/compartidos';
