@@ -2,21 +2,25 @@
   padding: 0;
   margin: 0; }
 
+.asideLogoAside, .contenedorDentroDeMain {
+  display: flex;
+  flex-direction: row; }
+
+.asideLogoAside aside, .contenedorDentroDeMain section {
+  display: flex;
+  flex-direction: column; }
+
 .fondoIndex {
   background: radial-gradient(circle, rgba(0, 0, 0, 0.95098) 17%, #0e1e3d 60%, rgba(29, 52, 104, 0.5) 80%, rgba(100, 0, 0, 0.7));
   background-color: #7e0707; }
 
 .asideLogoAside {
-  display: flex;
-  flex-direction: row;
   text-align: center; }
   .asideLogoAside aside {
     width: 20vw;
     font-size: 1rem;
     text-align: center;
     font-family: "Clicker Script", cursive;
-    display: flex;
-    flex-direction: column;
     justify-content: center; }
     .asideLogoAside aside p span {
       font-family: letraMolde;
@@ -64,12 +68,8 @@
   height: auto; }
 
 .contenedorDentroDeMain {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly; }
   .contenedorDentroDeMain section {
-    display: flex;
-    flex-direction: column;
     width: 25vw;
     margin: 1rem;
     background-color: #fff67d17;

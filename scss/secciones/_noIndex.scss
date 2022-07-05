@@ -13,13 +13,11 @@
 }
 
 .contenedorDentroDeMain {
-    display: flex;
-    flex-direction: row;
+    @extend %dflex-row;
     justify-content: space-evenly;
 
     section {
-        display: flex;
-        flex-direction: column;
+        @extend %dflex-col;
         width: 25vw;
         margin: 1rem;
         background-color: $fondoSection;

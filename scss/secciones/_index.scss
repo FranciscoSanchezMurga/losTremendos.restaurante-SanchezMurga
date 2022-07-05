@@ -4,8 +4,7 @@
 }
 
 .asideLogoAside {
-    display: flex;
-    flex-direction: row;
+    @extend %dflex-row;
     text-align: center;
 
     aside {
@@ -13,8 +12,7 @@
         font-size: 1rem;
         text-align: center;
         font-family: $letraCarta;
-        display: flex;
-        flex-direction: column;
+        @extend %dflex-col;
         justify-content: center;
 
         p {
