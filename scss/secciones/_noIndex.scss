@@ -12,7 +12,7 @@
     }
 }
 
-.contenedorDentroDeMain {
+.contenedorDentroDeMain-row {
     @extend %dflex-row;
     justify-content: space-evenly;
 
@@ -53,9 +53,72 @@
     }
 }
 
-@media (max-width: 768px) {
+.contenedorDentroDeMainCol {
+    @extend %dflex-col;
+    align-items: center;
+    section {
+        @extend %dflex-row;
+        width: 50vw;
+        height: auto;
+        margin: 1rem;
+        background-color: $fondoSection;
+        border-radius: 2%;
+        .Mapa{
+            width: 75%;
+            iframe {
+                width:100%;
+                height: 30vh;
+                border-top-right-radius: 0%;
+                border-top-left-radius: 2%;
+                border-bottom-right-radius: 0%;
+                border-bottom-left-radius: 2%;
+            }
+        }
+        
+        .DiasHorarios {
+            width: 75%;
+            @extend %dflex-col;
+            align-items: center;
+            justify-content: space-between;
+            ul {
+                list-style-type: none;
+                color: white;
+                font-family: $letraMolde;
+                font-size: 1rem;
+                padding: 0;
+                margin: 0;
+   
+            }
+            h2 {
+                margin: 0.2rem;
+                color: $amarillo;
+                font-family: $letraCarta;
+                text-decoration: underline $amarillo 0.1rem;
+                font-size: 1.5rem;
+            }
+        }
 
-    .contenedorDentroDeMain {
+        .simbolosUbYHora {
+            width: 25%;
+            @extend %dflex-col;
+            border-left: $amarillo 0.1rem solid;
+            justify-content: center;
+            i {
+                transform: scale(3);
+                color: $amarillo;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .contenedorDentroDeMain-row {
         flex-direction: column;
         align-items: center;
     
@@ -67,5 +130,16 @@
             }
     
         }
+    }
+
+    .contenedorDentroDeMainCol {
+        section {
+            width: 87vw;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
     }
 }

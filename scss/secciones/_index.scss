@@ -29,12 +29,7 @@
     section {
          width: 60vw;
          .logoIndex {
-            position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            width: 100%;
-            height: auto;
+            @extend %centrado1SoloItem;
          }
     }
 }

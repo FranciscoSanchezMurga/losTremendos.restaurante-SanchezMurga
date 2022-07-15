@@ -5,79 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Vinculación con el archivo css con los estilos -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Logos facebook, whatsapp e instagram de Fontawesome -->
-    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
-    <!-- Logo miniatura desplegado en pestaña del buscador -->
+    <meta name="keywords" content="horarios,ubicación,mapas,delivery">
     <link rel="shortcut icon" href="/images/los_tremendos_logo.png" type="image/x-icon">
-    <!-- Letras personalizadas de google -->
+    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
-    <!-- Título del documento -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Ubicación y horarios - Los Tremendos</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <header class="header">
+    <div class="contenedor fondoOtrasPaginas">
 
-            <nav>
+        <header class="header container-fluid mt-2">
 
-                <img src="./images/los_tremendos_logo.png" alt="">
-
-                <ul>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./quienes_somos.html">¿Quienes somos?</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./productos.html">Productos y servicios</a>
-                    </li>
-                    <li class="itemDelNavSeleccionado">
-                        <a href="./ubicacion_y_horarios.html">Ubicación y horarios</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./contactenos.html">Contáctenos</a>
-                    </li>
-                </ul>
-
-                <img src="./images/los_tremendos_logo.png" alt="">
-
+            <nav class="navbar navbar-expand-md text-center nav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler botonNav" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img src="https://lh3.googleusercontent.com/4mJDnO5n-Z_d6VDlduqCncOPZj8eaNOMWDZZD2-xELRCF8hoW2Dwpzy0iSFMQmRbff5_UukvZJBJ6Mce0Ntky9SHyYzpQuFnznhOTYGUJOHyCD11jcpWLAYPih9VpDgkZLcRYx1xLA=w2400" alt="">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav w-100 justify-content-evenly">
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" aria-current="page" href="./pages/quienes_somos.html">¿Quienes somos?</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="./pages/productos.html">Productos y servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ya se encuentra en esta sección">Ubicación y horarios</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="./pages/contactenos.html">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
 
         </header>
 
         <main class="main">
 
-            <h1>Ubicación y horarios de atención</h1>
-            <div class="contenidoMain">
+
+            <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Ubicación y horarios de atención</h1>
+
+            <div class="contenedorDentroDeMainCol animate__animated animate__fadeIn animate__delay-2s">
+
                 <section>
-                    <h2>Ubicación</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.200687847296!2d-65.19378608456043!3d-26.83356848316175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c027aa86399%3A0xfd1470db95424d02!2sAv.%20Benjam%C3%ADn%20Ar%C3%A1oz%20400%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1647985768550!5m2!1ses-419!2sar"
-                        width="600" height="500" allowfullscreen="" loading="lazy"></iframe>
+
+                    <div class="Mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.200687847296!2d-65.19378608456043!3d-26.83356848316175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c027aa86399%3A0xfd1470db95424d02!2sAv.%20Benjam%C3%ADn%20Ar%C3%A1oz%20400%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1647985768550!5m2!1ses-419!2sar"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="simbolosUbYHora">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+
                 </section>
+
+
+
                 <section>
-                    <h2>Horarios</h2>
-                    <ul>
-                        <li>MARTES A JUEVES</li>
+                    <div class="DiasHorarios">
+                        <h2>
+                            Martes a jueves
+                        </h2>
                         <ul>
                             <li>12:00 - 15:00</li>
                             <li>20:00 - 01:00</li>
                         </ul>
-                        <li>VIERNES A DOMING</li>
+                        <h2>Viernes a Domingo</h2>
                         <ul>
                             <li>12:00 - 15:00</li>
                             <li>21:00 - 02:00</li>
                         </ul>
-                    </ul>
+            
+                    </div>
+
+                    <div class="simbolosUbYHora">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
                 </section>
+
             </div>
         </main>
 
@@ -95,6 +120,9 @@
             </a>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 
     </div>
 </body>
