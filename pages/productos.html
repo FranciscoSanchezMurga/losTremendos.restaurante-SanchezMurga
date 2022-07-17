@@ -5,114 +5,449 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="sánguche,sándwich,milanesa,lomito,pizzas,delivery">
-    <meta name="description" content="¡Aprecie nuestro increible catálogo de productos y promociones! Calidad y buen precio. ">
-    <!-- Vinculación con el archivo css con los estilos -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Logos facebook, whatsapp e instagram de Fontawesome -->
-    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
-    <!-- Logo miniatura desplegado en pestaña del buscador -->
+    <meta name="keywords" content="horarios,ubicación,mapas,delivery">
     <link rel="shortcut icon" href="/images/los_tremendos_logo.png" type="image/x-icon">
-    <!-- Letras personalizadas de google -->
+    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
-    <!-- Título del documento -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Productos y servicios - Los Tremendos</title>
 </head>
 
 <body>
 
-    <div>
-        <button href="./productos.html#inicio">Ir arriba</button>
-    </div>
+    <div class="contenedor fondoOtrasPaginas">
 
-    <div class="container" id="inicio">
+        <header class="header container-fluid mt-2">
 
-        <header class="header">
-
-            <nav>
-
-                <img src="./images/los_tremendos_logo.png" alt="">
-
-                <ul>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./quienes_somos.html">¿Quienes somos?</a>
-                    </li>
-                    <li class="itemDelNavSeleccionado">
-                        <a href="./productos.html">Productos y servicios</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./ubicacion_y_horarios.html">Ubicación y horarios</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./contactenos.html">Contáctenos</a>
-                    </li>
-                </ul>
-
-                <img src="./images/los_tremendos_logo.png" alt="">
-
+            <nav class="navbar navbar-expand-md text-center nav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler botonNav" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img src="https://lh3.googleusercontent.com/4mJDnO5n-Z_d6VDlduqCncOPZj8eaNOMWDZZD2-xELRCF8hoW2Dwpzy0iSFMQmRbff5_UukvZJBJ6Mce0Ntky9SHyYzpQuFnznhOTYGUJOHyCD11jcpWLAYPih9VpDgkZLcRYx1xLA=w2400"
+                        alt="">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav w-100 justify-content-evenly">
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" aria-current="page" href="./quienes_somos.html">¿Quienes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Ya se encuentra en esta sección">Productos y servicios</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="./ubicacion_y_horarios.html">Ubicación y horarios</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="./contactenos.html">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
 
         </header>
 
-        <main class="mainProductos">
+        <main class="main">
 
-            <h1>Nuestros productos...</h1>
+            <h1 class="h1Productos animate__animated animate__fadeInDown animate__delay-1s">Nuestros productos...</h1>
 
-            <section>
-                <h2>SÁNGUCHES</h2>
-                <div>
+            <nav id="menuProductos" class="navbar bg-transparent px-3 animate__animated animate__fadeIn animate__delay-2s">
+                <ul class="nav nav-pills">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Sánguches</a>
+                        <ul class="dropdown-menu">
 
-                    <article>
-                        <h3>Moli-Tremendo</h3>
-                        <img src="./images/moli-tremendo.jpg" alt="">
-                        <h4>Descripcion</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, natus.</p>
-                        <h4>Precio</h4>
-                        <p>$ XXXXXX</p>
-                    </article>
+                            <li><a class="dropdown-item" href="#sangucheMilanesa">Sánguche de milanesa</a></li>
+                            <li><a class="dropdown-item" href="#sangucheMilanesaEspecial">Sánguche de milanesa
+                                    especial</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#sangucheLomito">Sánguche de lomito</a></li>
+                            <li><a class="dropdown-item" href="#sangucheLomitoEspecial">Sánguche de lomito especial</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#moliTremendo">Moli-Tremendo</a></li>
+                            <li><a class="dropdown-item" href="#milaTremendo">Mila-Tremendo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Papas Fritas</a>
+                        <ul class="dropdown-menu">
 
-                    <article>
-                        <h3>Sánguche de milanesa</h3>
-                        <img src="./images/mila.jpg" alt="">
-                        <h4>Descripcion</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, natus.</p>
-                        <h4>Precio</h4>
-                        <p>$ XXXXXX</p>
-                    </article>
+                            <li><a class="dropdown-item" href="#fritas">Papas fritas (para 1 o 2)</a></li>
+                            <li><a class="dropdown-item" href="#fritasGratinadas">Papas Fritas Gratinadas (para 1 o
+                                    2)</a></li>
 
-                    <article>
-                        <h3>Sánguche de lomito</h3>
-                        <img src="" alt="">
-                        <h4>Descripcion</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, natus.</p>
-                        <h4>Precio</h4>
-                        <p>$ XXXXXX</p>
-                    </article>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Milanesa al plato</a>
+                        <ul class="dropdown-menu">
 
-                </div>
-            </section>
-                
-            <section>
-                <h2>PAPAS</h2>
-                <div class="contenedorCatalogo">
-                    <article>
-                        <h3>Moli-Tremendo</h3>
-                        <img src="" alt="">
-                        <h4>Descripcion</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, natus.</p>
-                        <h4>Precio</h4>
-                        <p>$ XXXXXX</p>
-                    </article>
-                </div>
-            </section>
+                            <li><a class="dropdown-item" href="#milaAlPlato">Milanesa al plato con fritas (para 1 o
+                                    2)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#napoAlPlato">Napolitana al plato con fritas (para 1 o
+                                    2)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Pizzas</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#pizzaEspecial">Pizza especial (grande o chica)</a></li>
+                            <li><a class="dropdown-item" href="#pizzaComun">Pizza común (grande o chica)</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div data-bs-spy="scroll" data-bs-target="#menuProductos" data-bs-root-margin="0px 0px -40%"
+                data-bs-smooth-scroll="true" class="scrollspy-example productos animate__animated animate__fadeIn animate__delay-3s" tabindex="0">
+
+                <section class="container-fluid">
+                    <div class="row">
+                        <div id="sangucheMilanesa" class="col-12 col-md-6 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/lcn0osAXTRZedXLFntYvZFjHCXlKjVjt5fv-JAzRHt-dOubZ3oRhrbnxBcuDwboHMkT_MjqZTXzDdYqqVYs6pPpGq1aHxGamLCATNbCzqEmP34MHgdegnuxFD-7s3ktRLmp6HC5_Mg=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sánguche de milanesa</h5>
+                                            <p class="card-text">
+                                                PRECIO = $500
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">Adicionales $50 c/u</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="sangucheMilanesaEspecial" class="col-12 col-md-6 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/JnThqof4n0aqQnVasphwp0UCC2boQy7pnCp-EIGMpFmqhSaaD3l9ov_y3ZTl14QrRhRuX2gG0xRac_C0XIcBQPFHhgW8UIvQtm4Fh_Wb0vjcnkl6sTjypgy9kLQ3jAFAklDxaaoACg=w2400"
+                                            class="img-fluid h-100 rounded-start"
+                                            alt="Foto sánguche de milanesa especial">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sánguche de milanesa especial</h5>
+                                            <p class="card-text">
+                                                PRECIO = $600
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">Con Jamón, Queso y
+                                                    Huevo!!!</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="sangucheLomito" class="col-12 col-md-6 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/hAClHNkCCYYkElrvYuWFo2A8nSpgC49jesphUrELgan92tjqb5EKyO_iX0-hiBqEDfA3l4LHqCsK4Ukk_Rb6llFibrkELTaiVYMGiGQuE39-PpZ-Ve1yH1kewEYHwy-iwFLL_jq-Wg=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sánguche de milanesa</h5>
+                                            <p class="card-text">
+                                                PRECIO = $550
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">Adicionales $50 c/u</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="sangucheLomitoEspecial" class="col-12 col-md-6 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/WxleHdUkznobDjjnrgl5erC8CclqreFOA_gdA6-R0WRW2KGsbIUhv_pgqxCBOktdygEVFlO_bAE2y_HySVZ8GgjAEA4HbZRyOnivPPA49167VV73dchnP8hOyJlvin8ubm0rJ4vn-A=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sánguche de lomito especial</h5>
+                                            <p class="card-text">
+                                                PRECIO = $650
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">Con Jamón, Queso y
+                                                    Huevo!!!</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="moliTremendo" class="col-12 col-md-6 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/FwE-YycpZu3xG0IZvX5YVg0kbEbgJt_H9PSO4jr4hYDqpFub81-wjepSsyuektobD6IAmVuAHF8KvLF7liUdhQ231UXlO-rVWmA8HNhqjfpXlty8_naXVyzzS6ddWNzPjR5Y49rvDg=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Moli-Tremendo</h5>
+                                            <p class="card-text">
+                                                PRECIO = $350
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">De carne molida!!</small>
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">Adicionales $50 c/u</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="milaTremendo" class="col-12 col-md-6 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/3mKlOd0-iT3TS7gpEJ1sJIKfHhechC8_g5PCb685gaaRVfp6JOgOjWE2WzXxN4bmiTqvEQ47KgiUjn81eCta9S4Lp9QMznmHTsV1RWXtNPSBbzSl8OR5E5CBQK7X-ivNVWzWroBJzA=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mila-Tremendo</h5>
+                                            <p class="card-text">
+                                                PRECIO = $900
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">
+                                                    Es GIGANTE!!</small>
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">
+                                                    Adicionales $50 c/u</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="container">
+                    <div class="row">
+                        <div id="fritas" class="col-12 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/5-yqhMu5nCSfEc7OBkhUGwjZWJIEKrhgAG1rT005icY6QT32NDTiIfHZAZ-1lLfo7GW6Jqoe-0FGpXivu20j7SPtHY6Q3wqzKE0cbRq4q5ZFKZxrZ9PEROd1yvD86-iwHj5QuRZF3Q=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="Papas Fritas comunes">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Papas Fritas</h5>
+                                            <p class="card-text">
+                                                Para 1 = $200
+                                            </p>
+                                            <p class="card-text">
+                                                Para 2 = $300
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="fritasGratinadas" class="col-12 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/TbGzYPiMLIOjVMjeryEN5vsEiQcARZVr1E28YUr7ittDwCruwTKrzJvGgqpXP1BFymf65iu8lPooczsRu1uIJj9v6AIi2oP_82RfSR3gDZqGWM9Homkx9nTKVI7t7oAOENgkTc_ggA=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="Foto de papas gratinadas">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Papas Fritas Gratinadas</h5>
+                                            <p class="card-text">
+                                                Para 1 = $270
+                                            </p>
+                                            <p class="card-text">
+                                                Para 2 = $370
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="container">
+
+                    <div class="row">
+                        <div id="milaAlPlato" class="col-12 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://th.bing.com/th/id/R.79f2ca2279e5fd95175e1a011ec1b57a?rik=PVqITC0cKf%2fCKw&pid=ImgRaw&r=0"
+                                            class="img-fluid h-100 rounded-start" alt="Foto de papas gratinadas">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Milanesa al plato</h5>
+                                            <p class="card-text">
+                                                Para 1 = 650 $
+                                            </p>
+                                            <p class="card-text">
+                                                Para 2 = 1.150 $
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">
+                                                    Con abudantes papas fritas!!</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="napoAlPlato" class="col-12 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/wVegLiD69qZtVxNu6VjMOSt16X-wlVVPAXPqMF63DDRf3txQzqc51mFXDuWjvGpL5MXlXwD8oZcK_j1mWIQXz1Kw_5yoJ0rZgE1DZOH8W6psIcmf0ck2X2OwAKTpmkjHJXUWtvTG8Q=w2400" class="img-fluid h-100 rounded-start" alt="Foto mila napolitana con papas">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Napolitana al Plato</h5>
+                                            <p class="card-text">
+                                                Para 1 = 700 $
+                                            </p>
+                                            <p class="card-text">
+                                                Para 2 = 1.300 $
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">
+                                                    Con abudantes papas fritas!!</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+
+                <section class="container">
+                    <div class="row">
+                        <div id="pizzaEspecial" class="col-12 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/a2_GdGDxCpkHe6YeKlf03qDx_RqzjCGi7P8fWeERDXsifnIQFOxVRiJEbK2JEXXDJbmWYsvxPQa7owK_1ZyMfVFlJfvAPJGvDtPbVxt6eT2FclC5VYcOK61bQmLZax6W4QB65vgmfQ=w2400"
+                                            class="img-fluid h-100 rounded-start" alt="Foto de pizza especial">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pizza especial</h5>
+                                            <p class="card-text">
+                                                Entera = 1.100 $
+                                            </p>
+                                            <p class="card-text">
+                                                Media = 650 $
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">
+                                                    Con mucho jamón y queso!!!</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="pizzaComún" class="col-12 p-1">
+
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-9">
+                                        <img src="https://lh3.googleusercontent.com/E0-IRub-R3DRIRFIzhFCF5RfLkFJchRbS20_TX8wjCUtUWMQkRibTlDDqS4PR8RGyDq9uBlojgqNbV4EFW4zMIrPRbRQJ5nVy1OA4e2HhjpziaFAV0tCFcKCg2Pf_88S7earHa0aAw=w2400" class="img-fluid h-100 rounded-start" alt="Foto de Pizza Común">
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pizza Común</h5>
+                                            <p class="card-text">
+                                                Para 1 = 550 $
+                                            </p>
+                                            <p class="card-text">
+                                                Para 2 = 1.000 $
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">
+                                                    Puro queso!!</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
+                </section>
+
+            </div>
         </main>
 
         <footer class="footer">
@@ -129,6 +464,13 @@
             </a>
         </footer>
     </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

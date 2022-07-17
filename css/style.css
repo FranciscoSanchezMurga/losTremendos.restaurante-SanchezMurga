@@ -140,6 +140,33 @@
       transform: scale(1.1);
       transition: all 1s; }
 
+.productos {
+  height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 0; }
+  .productos section {
+    padding: 0.2rem; }
+    .productos section div {
+      height: 50%; }
+      .productos section div div div div div .card-body .card-title {
+        color: black;
+        font-style: bold;
+        text-decoration: underline 0.2px; }
+      .productos section div div div div div .card-body .card-text {
+        color: black;
+        font-style: italic; }
+
+.h1Productos {
+  margin-top: 3rem; }
+
+#menuProductos {
+  z-index: 1; }
+  #menuProductos a {
+    color: #fff67d !important; }
+  #menuProductos ul li .dropdown-item {
+    color: black !important; }
+
 @media (max-width: 768px) {
   .contenedorDentroDeMain-row {
     flex-direction: column;
@@ -202,7 +229,8 @@ a:visited {
   grid-area: footer;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 2rem; }
   .footer i {
     color: #fff67d;
     margin: 1rem;

@@ -116,6 +116,59 @@
     }
 }
 
+.productos {
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 0;
+    section {
+        padding: 0.2rem;
+        div {
+            height: 50%;
+            div {
+                div{
+                    div{
+                        div {                                 
+                            .card-body {
+                                .card-title {
+                                    color: black;
+                                    font-style: bold;
+                                    text-decoration: underline 0.2px;
+                                }
+
+                                .card-text {
+                                    color: black;
+                                    font-style: italic;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+
+.h1Productos {
+    margin-top: 3rem;
+}
+
+#menuProductos {
+    z-index: 1;
+    a {
+        color: $amarillo !important;
+    }
+    ul {
+        li {
+            .dropdown-item {
+                color: black !important;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     
     .contenedorDentroDeMain-row {
