@@ -1,2 +1,3 @@
 node_modules/
-*.json
+# Lo dejo como comentario porque quiero que la profe pueda ver los archivos .json
+# *.json
