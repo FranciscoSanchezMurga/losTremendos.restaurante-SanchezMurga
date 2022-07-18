@@ -24,7 +24,7 @@ uso como logo miniatura de la página web.
 no es demasiado amplio. Considero que con el menú de navegación existente basta y
 sobra.
 
-5) Cree un archivo sitemap.xml para indicar al buscador la jeraruquía de las 
+5) Cree un archivo sitemap.xml para indicar al buscador la jerarquía de las 
 páginas web.
 
 IDEAS

@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.asideLogoAside, .contenedorDentroDeMain-row, .contenedorDentroDeMainCol section {
+  display: flex;
+  flex-direction: row; }
+
+.asideLogoAside aside, .contenedorDentroDeMain-row section, .contenedorDentroDeMainCol, .contenedorDentroDeMainCol section form, .contenedorDentroDeMainCol section .DiasHorarios, .contenedorDentroDeMainCol section .simbolosUbYHora {
+  display: flex;
+  flex-direction: column; }
+
+.asideLogoAside section .logoIndex {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) !important;
+  width: 100%;
+  height: auto; }
+
+.fondoIndex {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.95098) 17%, #0e1e3d 60%, rgba(29, 52, 104, 0.5) 80%, rgba(100, 0, 0, 0.7));
+  background-color: #7e0707; }
+
+.asideLogoAside {
+  text-align: center; }
+  .asideLogoAside aside {
+    width: 20vw;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Clicker Script", cursive;
+    justify-content: center; }
+    .asideLogoAside aside p span {
+      font-family: letraMolde;
+      animation-name: colorLetras;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-delay: 2s; }
+  .asideLogoAside section {
+    width: 60vw; }
+
+@keyframes colorLetras {
+  0% {
+    color: white; }
+  50% {
+    color: #fff67d;
+    font-size: 1.2rem; }
+  100% {
+    color: white;
+    transform: rotate(10deg); } }
+
+@media (max-width: 768px) {
+  .asideLogoAside {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .asideLogoAside aside {
+      width: 100vw;
+      align-items: center; }
+    .asideLogoAside section .logoIndex {
+      width: 100vw; } }
+
+.fondoOtrasPaginas {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.95098) 17%, #0e1e3d 60%, rgba(29, 52, 104, 0.5) 80%, rgba(100, 0, 0, 0.7));
+  background-color: #7e0707; }
+
+.header .nav img {
+  width: 10vw;
+  height: auto; }
+
+.contenedorDentroDeMain-row {
+  justify-content: space-evenly; }
+  .contenedorDentroDeMain-row section {
+    width: 25vw;
+    margin: 1rem;
+    background-color: #fff67d17;
+    border-radius: 2%; }
+    .contenedorDentroDeMain-row section:hover {
+      transform: scale(1.2);
+      transition: all 1s;
+      filter: saturate(1000%); }
+    .contenedorDentroDeMain-row section h2 {
+      font-family: "Clicker Script", cursive;
+      text-decoration: underline 0.1rem;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #fff67d;
+      margin: 1rem 1rem 0rem 1rem; }
+    .contenedorDentroDeMain-row section ul {
+      font-size: 1.3rem;
+      text-align: justify;
+      margin: 1rem; }
+    .contenedorDentroDeMain-row section p {
+      font-size: 1.3rem;
+      text-align: justify;
+      margin: 1rem; }
+
+.contenedorDentroDeMainCol {
+  align-items: center; }
+  .contenedorDentroDeMainCol section {
+    width: 50vw;
+    height: auto;
+    margin: 1rem;
+    background-color: #fff67d17;
+    border-radius: 2%; }
+    .contenedorDentroDeMainCol section form {
+      padding: 1rem;
+      width: 75%;
+      align-items: center; }
+      .contenedorDentroDeMainCol section form .boton {
+        width: 25%;
+        font-style: bold;
+        text-align: center;
+        background-color: #fff67d !important;
+        border-radius: 5px; }
+        .contenedorDentroDeMainCol section form .boton:hover {
+          opacity: 100;
+          border: solid 2px black;
+          transform: scale(1.2);
+          transition: 0.5s; }
+      .contenedorDentroDeMainCol section form input,
+      .contenedorDentroDeMainCol section form textarea {
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        text-align: left;
+        opacity: 70%;
+        color: grey; }
+        .contenedorDentroDeMainCol section form input::placeholder,
+        .contenedorDentroDeMainCol section form textarea::placeholder {
+          color: black;
+          font-size: 1.1rem;
+          overflow: hidden; }
+        .contenedorDentroDeMainCol section form input:hover,
+        .contenedorDentroDeMainCol section form textarea:hover {
+          border: solid white 0.5px;
+          background-color: black;
+          transition: 0.3s; }
+          .contenedorDentroDeMainCol section form input:hover::placeholder,
+          .contenedorDentroDeMainCol section form textarea:hover::placeholder {
+            color: #fff67d; }
+    .contenedorDentroDeMainCol section .Mapa {
+      width: 75%; }
+      .contenedorDentroDeMainCol section .Mapa iframe {
+        width: 100%;
+        height: 30vh;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 2%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 2%; }
+    .contenedorDentroDeMainCol section .DiasHorarios {
+      width: 75%;
+      align-items: center;
+      justify-content: space-between; }
+      .contenedorDentroDeMainCol section .DiasHorarios ul {
+        list-style-type: none;
+        color: white;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0; }
+      .contenedorDentroDeMainCol section .DiasHorarios h2 {
+        margin: 0.2rem;
+        color: #fff67d;
+        font-family: "Clicker Script", cursive;
+        text-decoration: underline #fff67d 0.1rem;
+        font-size: 1.5rem; }
+    .contenedorDentroDeMainCol section .simbolosUbYHora {
+      width: 25%;
+      border-left: #fff67d 0.1rem solid;
+      justify-content: center; }
+      .contenedorDentroDeMainCol section .simbolosUbYHora i {
+        transform: scale(3);
+        color: #fff67d; }
+    .contenedorDentroDeMainCol section:hover {
+      transform: scale(1.1);
+      transition: all 1s; }
+
+.productos {
+  height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 0; }
+  .productos section {
+    padding: 0.2rem; }
+    .productos section div {
+      height: 50%; }
+      .productos section div div div div div .card-body .card-title {
+        color: black;
+        font-style: bold;
+        text-decoration: underline 0.2px; }
+      .productos section div div div div div .card-body .card-text {
+        color: black;
+        font-style: italic; }
+
+.h1Productos {
+  margin-top: 3rem; }
+
+#menuProductos {
+  z-index: 1; }
+  #menuProductos a {
+    color: #fff67d !important; }
+  #menuProductos ul li .dropdown-item {
+    color: black !important; }
+
+@media (max-width: 768px) {
+  .contenedorDentroDeMain-row {
+    flex-direction: column;
+    align-items: center; }
+    .contenedorDentroDeMain-row section {
+      width: 90vw; }
+      .contenedorDentroDeMain-row section:hover {
+        transform: scale(1.1); }
+  .contenedorDentroDeMainCol section {
+    width: 87vw; }
+  .contenedorDentroDeMainCol:hover {
+    transform: scale(1.02); } }
+
+.contenedor {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 3.2fr 0.4fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+.header {
+  grid-area: header; }
+  .header .nav {
+    background-color: #fff67d;
+    opacity: 50%; }
+    .header .nav .botonNav {
+      background-color: grey;
+      opacity: 100%; }
+    .header .nav div img {
+      opacity: 100%; }
+    .header .nav div ul .itemDelNavNoSeleccionado:hover {
+      padding: 0rem 0.3rem;
+      transform: scale(1.3);
+      transition: .5s;
+      border: solid #1D3468 0.1rem;
+      background-color: #ffef12;
+      border-radius: 5%;
+      opacity: 100%;
+      transition: all 0.5s; }
+
+a {
+  text-decoration: none; }
+
+a:visited {
+  color: #1D3468; }
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+  text-align: center; }
+  .main h1 {
+    font-family: "Clicker Script", cursive;
+    font-size: 3rem;
+    text-decoration: underline white 0.1rem; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem; }
+  .footer i {
+    color: #fff67d;
+    margin: 1rem;
+    transform: scale(2); }
+    .footer i:hover {
+      color: #ffef12;
+      transform: scale(3);
+      transition: .3s; }
+
+@media (max-width: 768px) {
+  .header .nav div ul .itemDelNavNoSeleccionado:hover {
+    margin: auto; } }
