@@ -1,0 +1,34 @@
+¿QUE HICE?
+1) Jerarquía de archivos
+Cree una carpeta pages en donde están todas las páginas menos index.
+
+2) Etiquetas meta keywords y meta description.
+A la página index le puse keywords vinculadas con lo que seguramente un potencial
+cliente buscaría si tiene ganas de comer algo vinculado a lo que vendemos.
+
+3) Para ahorrar espacio en imágenes, en vez de comprimirlas decidí que sería
+mas conveniente utilizar espacio de almacenamiento en la nube.
+Utilizo Google Photos, donde tengo un album personal donde están todas las fotos,
+las cuales pueden ser vistas por cualquiera que tenga los links. Tomé las fotos
+del album que eran de mi interés e intente copiar sus links y pegarlos en las etiquetas
+html correspondientes, pero aparentemente no pueden verse de esta forma en la
+página. Encontré una página web que introduciendole el link de Google Photos,
+realiza un procesamiento interno desconocido que te devuelve un nuevo link, el cual
+al ser pegado en el código permite que la imagen pueda ser vista.
+Link de la página: https://www.labnol.org/embed/google/photos/
+
+La única foto que comprimi y decidí dejarla en la carpeta "images" es la que 
+uso como logo miniatura de la página web.
+
+4) Un mapa del sitio para el usuario no me pareció conveniente porque el contenido
+no es demasiado amplio. Considero que con el menú de navegación existente basta y
+sobra.
+
+5) Cree un archivo sitemap.xml para indicar al buscador la jeraruquía de las 
+páginas web.
+
+IDEAS
+
+Listas de ruta de exploración: Brandon´s Baseball Cards > Articles > Top Ten Rarest Baseball Cards
+
+Páginas para alojar imágenes: 
