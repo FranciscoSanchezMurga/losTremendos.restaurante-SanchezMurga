@@ -5,95 +5,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="teléfono,celular,mail,facebook,whatsapp,instagram,redes,sociales">
-    <meta name="description" content="¿Quiere venir a visitarnos o ver que tan lejos estamos? ¡Vea nuestros horarios y ubicación en el mapa!">
-    <!-- Vinculación con el archivo css con los estilos -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Logos facebook, whatsapp e instagram de Fontawesome -->
-    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
-    <!-- Logo miniatura desplegado en pestaña del buscador -->
+    <meta name="keywords" content="horarios,ubicación,mapas,delivery">
     <link rel="shortcut icon" href="/images/los_tremendos_logo.png" type="image/x-icon">
-    <!-- Letras personalizadas de google -->
+    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/200a3d438c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
-    <!-- Título del documento -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contáctenos - Los Tremendos</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="contenedor fondoOtrasPaginas">
 
-        <header class="header">
+        <header class="header container-fluid mt-2">
 
-            <nav>
-
-                <img src="./images/los_tremendos_logo.png" alt="">
-
-                <ul>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./quienes_somos.html">¿Quienes somos?</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./productos.html">Productos y servicios</a>
-                    </li>
-                    <li class="itemDelNavNoSeleccionado">
-                        <a href="./ubicacion_y_horarios.html">Ubicación y horarios</a>
-                    </li>
-                    <li class="itemDelNavSeleccionado">
-                        <a href="./contactenos.html">Contáctenos</a>
-                    </li>
-                </ul>
-
-                <img src="./images/los_tremendos_logo.png" alt="">
-
+            <nav class="navbar navbar-expand-md text-center nav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler botonNav" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img src="https://lh3.googleusercontent.com/4mJDnO5n-Z_d6VDlduqCncOPZj8eaNOMWDZZD2-xELRCF8hoW2Dwpzy0iSFMQmRbff5_UukvZJBJ6Mce0Ntky9SHyYzpQuFnznhOTYGUJOHyCD11jcpWLAYPih9VpDgkZLcRYx1xLA=w2400"
+                        alt="">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav w-100 justify-content-evenly">
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" aria-current="page" href="./quienes_somos.html">¿Quienes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Ya se encuentra en esta sección">Productos y servicios</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="./ubicacion_y_horarios.html">Ubicación y horarios</a>
+                            </li>
+                            <li class="nav-item itemDelNavNoSeleccionado">
+                                <a class="nav-link" href="./contactenos.html">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            
+
         </header>
 
         <main class="main">
 
             <h1>!Contáctenos!</h1>
-            <div class="contenidoMain">
+
+            <div class="contenedorDentroDeMainCol">
                 <section>
-                    <form action="index.html" method="post">
-                        <div>
-                            <label for="">Nombre</label>
-                            <br>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Apellido</label>
-                            <br>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Su email</label>
-                            <br>
-                            <input type="email">
-                        </div>
-                        <div>
-                            <label for="">Su número de celular</label>
-                            <br>
-                            <input type="number">
-                        </div>
-                        <div>
-                            <label for="">Consulta</label>
-                            <br>
-                            <textarea></textarea>
-                        </div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
+                    <form action="../index.html" method="post">
+                        <h2>Complete el registro</h2>
+                        <input type="text" name="nombres" id="nombres" placeholder="Su nombre">
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Su apellido">
+                        <input type="email" name="emails" id="emails" placeholder="Su correo (ejemplo: losTremendos@gmail.com)">
+                        <input type="number" name="numeros" id="numeros" placeholder="Su número telefónico (ejemplo: 381-6504838)">
+                        <textarea  name="consultas" id="consultas" placeholder="Escriba aquí el motivo de su consulta"></textarea>
+                        <input class="boton" type="reset" value="Limpiar">
+                        <input class="boton" type="submit" value="Enviar">
+                        
                     </form>
 
-
+                    <div class="simbolosUbYHora">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
                 </section>
             </div>
+            
         </main>
 
         <footer class="footer">
@@ -110,6 +100,11 @@
             </a>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

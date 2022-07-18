@@ -22,10 +22,14 @@
 
         .botonNav {
             background-color: $gris;
+            opacity: 100%;
         }
 
         div {
 
+            img {
+                opacity: 100%;
+            }
             ul {
                 .itemDelNavNoSeleccionado {
                     &:hover {
